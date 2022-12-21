@@ -17362,7 +17362,7 @@ table.tablesorter thead tr .headerSortDown {
 .off-canvas-sidebar .sidebar-wrapper {
   width: 100%;
   min-height: 100%;
-  max-height: calc(100vh - 800px);
+    max-height: calc(100vh - 80px);
   z-index: 4;
   position: relative;
   overflow: auto;
@@ -19244,7 +19244,8 @@ textarea.form-control:active {
  * Container style
  */
 .ps {
-  overflow: hidden !important;
+  overflow-y: auto !important;
+  overflow-x: auto !important;
   overflow-anchor: none;
   -ms-overflow-style: none;
   touch-action: auto;
