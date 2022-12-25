@@ -20,5 +20,12 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             AdminMenuSeeder::class
         ]);
+
+        \App\Models\User::factory()->create([
+            'name' => 'Tester',
+            'email' => 'tester@yopmail.com',
+            'email_verified_at' => now(),
+            'password' => bcrypt('123123'),
+        ]);
     }
 }
